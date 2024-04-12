@@ -1,0 +1,15 @@
+print(' ola bem vindo a sua calculadora de imc")
+peso=float(input(" Insira seu peso:  "))
+altura= float(input("Insira sua altura: "))
+imc = float(peso / altura**2)
+
+if imc <= 17 :
+    print("seu peso é", imc, "e esta abaixo do peso")
+elif imc >= 18.5 or imc >= 24.9:
+    print(imc,"peso normal")
+elif imc >= 25 or imc >= 29.9:
+    print ( imc, "acima do peso")  
+elif imc < 40.0:
+    print ("obsidade", imc) 
+else:
+    print("isso não é um numero")
